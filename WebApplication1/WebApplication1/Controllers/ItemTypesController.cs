@@ -44,9 +44,6 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        // POST: ItemTypes/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ItemTypeId,Name,Image,CategoryId")] ItemType itemType)
@@ -78,9 +75,6 @@ namespace WebApplication1.Controllers
             return View(itemType);
         }
 
-        // POST: ItemTypes/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ItemTypeId,Name,Image,CategoryId")] ItemType itemType)

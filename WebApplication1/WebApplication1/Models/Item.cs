@@ -33,8 +33,6 @@ namespace WebApplication1.Models
         [Index("indexing", 4, IsUnique = true)]
         public float Price { get; set; }
 
-        //[Required]
-        //[Index("IX_Date", 5)]
         public DateTime Date = DateTime.Now;
 
 

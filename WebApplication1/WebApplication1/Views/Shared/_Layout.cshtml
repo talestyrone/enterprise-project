@@ -29,14 +29,14 @@
                     }
                     else if (User.IsInRole("Admin"))
                     {
-                        <li>@Html.ActionLink("ItemTypes", "Create", "ItemTypes")</li>
-                        <li>@Html.ActionLink("Items", "Create", "Items")</li>
-                        <li>@Html.ActionLink("Categories", "Create", "Categories")</li>
+                        <li>@Html.ActionLink("ItemTypes", "Index", "ItemTypes")</li>
+                        <li>@Html.ActionLink("Items", "Index", "Items")</li>
+                        <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
                     }
                     else if (User.IsInRole("User"))
                     {
-                        <li>@Html.ActionLink("ItemTypes", "Create", "ItemTypes")</li>
-                        <li>@Html.ActionLink("Items", "Create", "Items")</li>
+                        <li>@Html.ActionLink("ItemTypes", "Index", "ItemTypes")</li>
+                        <li>@Html.ActionLink("Items", "Index", "Items")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     }
                 </ul>
